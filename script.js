@@ -1,5 +1,18 @@
-const toggle=document.querySelector('.menu-toggle');
-const nav=document.querySelector('.nav');
-toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open)});
-document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
-document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
+
+function sendWhatsApp(event){
+  event.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const service = document.getElementById("service").value;
+  const message = document.getElementById("message").value.trim();
+
+  const text =
+    "Namaste RK Engineering Consultant,%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Mobile: " + encodeURIComponent(phone) + "%0A" +
+    "Service: " + encodeURIComponent(service) + "%0A" +
+    "Project Details: " + encodeURIComponent(message);
+
+  window.open("https://wa.me/9779852820215?text=" + text, "_blank");
+}
