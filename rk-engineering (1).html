@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RK Engineering Consultant | Rajbiraj, Saptari</title>
+<meta name="description" content="RK Engineering Consultant, Rajbiraj — civil & structural engineering, building design, ETABS analysis, BOQ, DPR and site supervision.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230F2A43'/%3E%3Cpath d='M4 14 V4 H14' stroke='%23E8792E' stroke-width='3' fill='none'/%3E%3Cpath d='M50 4 H60 V14' stroke='%23E8792E' stroke-width='3' fill='none'/%3E%3Cpath d='M60 50 V60 H50' stroke='%23E8792E' stroke-width='3' fill='none'/%3E%3Cpath d='M14 60 H4 V50' stroke='%23E8792E' stroke-width='3' fill='none'/%3E%3Ctext x='32' y='33' text-anchor='middle' font-family='Arial' font-weight='700' font-size='21' fill='%23F7F5EF'%3ERK%3C/text%3E%3Cpath d='M32 39 L25.5 48 H38.5 Z' fill='none' stroke='%23E8792E' stroke-width='2'/%3E%3Cline x1='23.5' y1='50.5' x2='40.5' y2='50.5' stroke='%23E8792E' stroke-width='2'/%3E%3C/svg%3E">
+<style>
+:root{
+  --navy:#0F2A43; --steel:#1B4965; --line:#B9C6D1;
+  --paper:#EFEBE2; --paper2:#E4DFD2; --ink:#141A20;
+  --orange:#E8792E; --white:#F7F5EF;
+  --font-head:'Space Grotesk',sans-serif; --font-body:'Inter',sans-serif; --font-mono:'JetBrains Mono',monospace;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --paper:#0F1418; --paper2:#141B21; --ink:#EDEAE2; --line:#33424D; --white:#EDEAE2; }
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth; scroll-padding-top:env(safe-area-inset-top,0px);}
+body{font-family:var(--font-body);color:var(--ink);background:var(--paper);line-height:1.55; overflow-x:hidden;}
+img,svg{max-width:100%;}
+h1,h2,h3{font-family:var(--font-head);letter-spacing:-0.01em;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+.blueprint-bg{
+  background-image:linear-gradient(var(--line) 1px, transparent 1px),linear-gradient(90deg,var(--line) 1px, transparent 1px);
+  background-size:40px 40px; background-position:-1px -1px; opacity:.35;
+  position:absolute; inset:0; pointer-events:none;
+}
+/* header */
+header{position:sticky; top:env(safe-area-inset-top,0px); z-index:50; background:var(--navy); color:var(--white); border-bottom:3px solid var(--orange);}
+.topbar{display:flex; justify-content:space-between; align-items:center; padding:14px 24px; max-width:1120px; margin:0 auto; flex-wrap:wrap; gap:10px;}
+.brand{display:flex; align-items:center; gap:12px;}
+.brand-mark{width:46px;height:46px;flex-shrink:0;}
+.brand-mark svg{width:100%;height:100%;display:block;}
+.brand-text b{display:block;font-family:var(--font-head);font-size:17px;font-weight:700;}
+.brand-text span{display:block;font-size:11.5px;font-family:var(--font-mono);color:#C9D6E0;}
+nav{display:flex; gap:22px; align-items:center;}
+nav a{font-size:14.5px; font-weight:500; opacity:.9; padding:4px 0; border-bottom:2px solid transparent;}
+nav a:hover, nav a:focus-visible{opacity:1; border-color:var(--orange); outline:none;}
+.nav-cta{background:var(--orange); color:var(--navy); padding:8px 16px; font-weight:600; font-size:14px;}
+.nav-toggle{display:none;background:none;border:1px solid var(--white);color:var(--white);padding:7px 10px;font-size:15px;}
+@media(max-width:860px){
+  nav{position:absolute; top:100%; left:0; right:0; background:var(--navy); flex-direction:column; align-items:flex-start; padding:6px 24px 18px; gap:14px; display:none;}
+  nav.open{display:flex;}
+  .nav-cta{margin-top:4px;}
+  .nav-toggle{display:block;}
+}
+/* hero */
+.hero{position:relative; background:var(--navy); color:var(--white); overflow:hidden;}
+.hero .wrap{position:relative; display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; padding:76px 24px 64px;}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr;}}
+.eyebrow{font-family:var(--font-mono); font-size:12.5px; color:var(--orange); letter-spacing:.03em;}
+.hero h1{font-size:clamp(34px,5.4vw,54px); font-weight:700; line-height:1.05; margin:16px 0 18px;}
+.hero p{font-size:16.5px; color:#D3DDE5; max-width:46ch;}
+.hero .actions{display:flex; gap:14px; margin-top:30px; flex-wrap:wrap;}
+.btn{display:inline-block; padding:13px 24px; font-weight:600; font-size:14.5px; border:2px solid var(--orange);}
+.btn-solid{background:var(--orange); color:var(--navy);}
+.btn-outline{background:transparent; color:var(--white); border-color:var(--white);}
+.btn-outline:hover{border-color:var(--orange); color:var(--orange);}
+.btn-solid:hover{background:transparent; color:var(--orange);}
+.stat-strip{display:flex; gap:0; margin-top:40px; border-top:1px solid #2A415A; padding-top:20px; flex-wrap:wrap;}
+.stat{padding-right:28px; margin-right:28px; border-right:1px solid #2A415A;}
+.stat:last-child{border-right:none;}
+.stat b{display:block; font-family:var(--font-head); font-size:21px; color:var(--orange);}
+.stat span{font-size:12.5px; color:#A9BBC9;}
+.blueprint-art{position:relative;}
+.blueprint-art svg{width:100%; height:auto;}
+.draw-line{stroke-dasharray:900; stroke-dashoffset:900; animation:draw 2.6s ease forwards .3s;}
+@media (prefers-reduced-motion: reduce){ .draw-line{animation:none; stroke-dashoffset:0;} }
+@keyframes draw{to{stroke-dashoffset:0;}}
+
+/* section basics */
+section{padding:80px 0; position:relative;}
+.section-head{max-width:640px; margin-bottom:44px;}
+.section-head .eyebrow{color:var(--steel);}
+.section-head h2{font-size:clamp(26px,3.4vw,36px); margin-top:10px;}
+.section-head p{color:#54606A; margin-top:12px; font-size:15.5px;}
+[data-theme="dark"] .section-head p, :root:not([data-theme="light"]) .section-head p{color:#9FADB8;}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .section-head p{color:#9FADB8;} }
+
+/* about */
+.about-grid{display:grid; grid-template-columns:1fr 1fr; gap:54px; align-items:start;}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr;}}
+.checklist{list-style:none; margin-top:24px; display:grid; gap:12px;}
+.checklist li{display:flex; gap:10px; font-size:15px;}
+.checklist li::before{content:"";width:8px;height:8px;background:var(--orange);margin-top:7px;flex-shrink:0;}
+.profile-card{border:1px solid var(--line); padding:28px; background:var(--paper2);}
+.profile-photo{aspect-ratio:4/3; border:1px dashed var(--line); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-size:13px; color:#8A97A2; margin-bottom:18px;}
+.profile-card h3{font-size:19px;}
+.profile-card p{font-size:14px; color:#6B7680; margin-top:4px;}
+
+/* services */
+.svc-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
+@media(max-width:860px){.svc-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:520px){.svc-grid{grid-template-columns:1fr;}}
+.svc-card{background:var(--paper); padding:28px 24px; transition:background .2s;}
+.svc-card:hover{background:var(--paper2);}
+.svc-tag{font-family:var(--font-mono); font-size:11.5px; color:var(--orange); display:block; margin-bottom:14px;}
+.svc-card h3{font-size:16.5px; margin-bottom:8px;}
+.svc-card p{font-size:13.8px; color:#5C6770;}
+
+/* projects */
+.proj-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+@media(max-width:860px){.proj-grid{grid-template-columns:1fr;}}
+.proj-card{border:1px solid var(--line);}
+.proj-photo{aspect-ratio:16/11; background:var(--paper2); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-size:12.5px; color:#8A97A2; border-bottom:1px solid var(--line);}
+.proj-body{padding:18px 20px;}
+.proj-body h3{font-size:17px;}
+.proj-body span{font-family:var(--font-mono); font-size:12px; color:var(--steel); display:block; margin-top:6px;}
+
+/* gallery */
+.gal-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:10px;}
+@media(max-width:640px){.gal-grid{grid-template-columns:repeat(2,1fr);}}
+.gal-item{aspect-ratio:1; background:var(--paper2); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-size:12px; color:#8A97A2; cursor:pointer;}
+.gal-item:hover{background:var(--navy); color:var(--orange);}
+
+/* cta band */
+.cta-band{background:var(--navy); color:var(--white); text-align:center;}
+.cta-band h2{font-size:clamp(24px,3.4vw,32px); max-width:620px; margin:0 auto 26px;}
+.cta-band .eyebrow{color:var(--orange);}
+
+/* contact */
+.contact-grid{display:grid; grid-template-columns:.9fr 1.1fr; gap:54px;}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr;}}
+.contact-list{display:grid; gap:18px; margin-top:24px;}
+.contact-list a, .contact-list div{display:flex; gap:14px; align-items:flex-start; font-size:14.5px;}
+.contact-list .k{font-family:var(--font-mono); font-size:11.5px; color:var(--steel); display:block;}
+.form-box{border:1px solid var(--line); padding:26px; background:var(--paper2);}
+.field{margin-bottom:16px;}
+.field label{display:block; font-size:12.5px; font-family:var(--font-mono); color:var(--steel); margin-bottom:6px;}
+.field input, .field select, .field textarea{
+  width:100%; padding:11px 12px; border:1px solid var(--line); background:var(--paper); color:var(--ink); font-family:var(--font-body); font-size:14.5px;
+}
+.field input:focus, .field select:focus, .field textarea:focus{outline:2px solid var(--orange); outline-offset:1px;}
+.form-box .btn{width:100%; text-align:center; margin-top:4px; cursor:pointer;}
+.map-box{border:1px solid var(--line); margin-top:22px; aspect-ratio:16/11; overflow:hidden; filter:grayscale(.15) contrast(1.05);}
+.map-box iframe{width:100%; height:100%; border:0; display:block;}
+
+footer{background:var(--navy); color:#A9BBC9; padding:36px 0 24px; font-size:13.5px;}
+.foot-wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px; align-items:center;}
+footer b{color:var(--white); font-family:var(--font-head);}
+.wa-float{position:fixed; bottom:calc(22px + env(safe-area-inset-bottom,0px)); right:22px; width:54px; height:54px; background:#25D366; color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:26px; z-index:60; box-shadow:0 4px 14px rgba(0,0,0,.3);}
+:focus-visible{outline:2px solid var(--orange); outline-offset:2px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 14 V4 H14" stroke="#E8792E" stroke-width="2.2" fill="none"/>
+          <path d="M50 4 H60 V14" stroke="#E8792E" stroke-width="2.2" fill="none"/>
+          <path d="M60 50 V60 H50" stroke="#E8792E" stroke-width="2.2" fill="none"/>
+          <path d="M14 60 H4 V50" stroke="#E8792E" stroke-width="2.2" fill="none"/>
+          <text x="32" y="33" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="21" fill="#F7F5EF">RK</text>
+          <path d="M32 39 L25.5 48 H38.5 Z" fill="none" stroke="#E8792E" stroke-width="1.6"/>
+          <line x1="23.5" y1="50.5" x2="40.5" y2="50.5" stroke="#E8792E" stroke-width="1.6"/>
+          <line x1="24.5" y1="54" x2="28.5" y2="50.5" stroke="#E8792E" stroke-width="1"/>
+          <line x1="28.5" y1="54" x2="32.5" y2="50.5" stroke="#E8792E" stroke-width="1"/>
+          <line x1="32.5" y1="54" x2="36.5" y2="50.5" stroke="#E8792E" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="brand-text"><b>RK ENGINEERING CONSULTANT</b><span>Your Dream · Our Design · Stronger Tomorrow</span></div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-cta">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">// Civil &amp; Structural Engineering — Rajbiraj, Saptari</span>
+      <h1>Buildings designed to stand, engineered to last.</h1>
+      <p>RK Engineering Consultant delivers safe, economical and code-compliant structural solutions — from first sketch to site handover — for homes and commercial buildings across Saptari.</p>
+      <div class="actions">
+        <a href="#services" class="btn btn-solid">Our Services</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </div>
+      <div class="stat-strip">
+        <div class="stat"><b>10+</b><span>Engineering services</span></div>
+        <div class="stat"><b>G+1 – G+3</b><span>Building design range</span></div>
+        <div class="stat"><b>ETABS</b><span>Structural analysis</span></div>
+        <div class="stat"><b>Rajbiraj</b><span>Saptari, Nepal</span></div>
+      </div>
+    </div>
+    <div class="blueprint-art" aria-hidden="true">
+      <svg viewBox="0 0 420 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="60" y="120" width="300" height="300" stroke="#3E5A73" stroke-width="1.5"/>
+        <line x1="60" y1="170" x2="360" y2="170" stroke="#3E5A73" stroke-width="1"/>
+        <line x1="60" y1="220" x2="360" y2="220" stroke="#3E5A73" stroke-width="1"/>
+        <line x1="60" y1="270" x2="360" y2="270" stroke="#3E5A73" stroke-width="1"/>
+        <line x1="60" y1="320" x2="360" y2="320" stroke="#3E5A73" stroke-width="1"/>
+        <line x1="60" y1="370" x2="360" y2="370" stroke="#3E5A73" stroke-width="1"/>
+        <line x1="130" y1="120" x2="130" y2="420" stroke="#3E5A73" stroke-width="1"/>
+        <line x1="210" y1="120" x2="210" y2="420" stroke="#3E5A73" stroke-width="1"/>
+        <line x1="290" y1="120" x2="290" y2="420" stroke="#3E5A73" stroke-width="1"/>
+        <path class="draw-line" d="M60 120 L210 40 L360 120" stroke="#E8792E" stroke-width="2.5"/>
+        <rect class="draw-line" x="60" y="120" width="300" height="300" stroke="#F7F5EF" stroke-width="2"/>
+        <circle cx="210" cy="270" r="3" fill="#E8792E"/>
+        <line x1="210" y1="270" x2="270" y2="240" stroke="#E8792E" stroke-width="1"/>
+        <text x="274" y="238" fill="#E8792E" font-family="JetBrains Mono" font-size="11">RCC Frame</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">About Us</span>
+      <h2>Engineering with practical solutions</h2>
+      <p style="margin-top:14px; color:#54606A;">RK Engineering Consultant provides civil and structural engineering services with a focus on safe, economical and practical construction — supporting residential and commercial projects from concept and drawing through structural analysis, estimation, documentation and site-level technical support.</p>
+      <ul class="checklist">
+        <li>Building Planning &amp; Design</li>
+        <li>Structural Analysis &amp; RCC Design</li>
+        <li>BOQ, Estimate &amp; Costing</li>
+        <li>DPR &amp; Technical Documentation</li>
+      </ul>
+      <a href="#contact" class="btn btn-outline" style="margin-top:28px; border-color:var(--steel); color:var(--steel);">Discuss your project →</a>
+    </div>
+    <div class="profile-card">
+      <div class="profile-photo">Photo — add later</div>
+      <h3>Pro. Tuna Lal Karna</h3>
+      <p>RK Engineering Consultant<br>Rajbiraj-2, Saptari, Nepal</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:var(--paper2);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What We Do</span>
+      <h2>Our Services</h2>
+      <p>Complete civil and structural engineering support, from drawing board to site.</p>
+    </div>
+  </div>
+  <div class="wrap" style="padding:0 24px;">
+    <div class="svc-grid">
+      <div class="svc-card"><span class="svc-tag">01 · Design</span><h3>Building Design</h3><p>Residential and commercial architectural planning with practical layouts.</p></div>
+      <div class="svc-card"><span class="svc-tag">02 · Design</span><h3>Structural Design</h3><p>RCC structural design and detailing for safe, economical construction.</p></div>
+      <div class="svc-card"><span class="svc-tag">03 · Analysis</span><h3>ETABS Analysis</h3><p>Structural modelling with code-based seismic and gravity load checks.</p></div>
+      <div class="svc-card"><span class="svc-tag">04 · Drafting</span><h3>AutoCAD Drawing</h3><p>Professional floor plans, structural drawings and construction details.</p></div>
+      <div class="svc-card"><span class="svc-tag">05 · Costing</span><h3>BOQ &amp; Estimation</h3><p>Quantity take-off, cost estimates, rate analysis and BOQ preparation.</p></div>
+      <div class="svc-card"><span class="svc-tag">06 · Docs</span><h3>DPR Preparation</h3><p>Detailed project reports and technical &amp; financial project support.</p></div>
+      <div class="svc-card"><span class="svc-tag">07 · Site</span><h3>Survey &amp; Mapping</h3><p>Site measurement, planning support and survey documentation.</p></div>
+      <div class="svc-card"><span class="svc-tag">08 · Site</span><h3>Site Supervision</h3><p>Technical guidance, quality checks and construction-stage support.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our Work</span>
+      <h2>Featured Projects</h2>
+      <p>Project photos can be added here anytime.</p>
+    </div>
+    <div class="proj-grid">
+      <div class="proj-card"><div class="proj-photo">Project photo</div><div class="proj-body"><h3>Residential Building</h3><span>Planning · Structural Design · BOQ</span></div></div>
+      <div class="proj-card"><div class="proj-photo">Project photo</div><div class="proj-body"><h3>G+2 / G+3 Building</h3><span>ETABS Analysis · RCC Design</span></div></div>
+      <div class="proj-card"><div class="proj-photo">Project photo</div><div class="proj-body"><h3>Infrastructure / DPR</h3><span>BOQ · Rate Analysis · DPR</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="background:var(--paper2);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Gallery</span>
+      <h2>Project Gallery</h2>
+      <p>Replace these placeholders with your own project photographs later.</p>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-item">Photo 01</div><div class="gal-item">Photo 02</div><div class="gal-item">Photo 03</div>
+      <div class="gal-item">Photo 04</div><div class="gal-item">Photo 05</div><div class="gal-item">Photo 06</div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow">Start Your Project</span>
+    <h2 style="margin-top:12px;">Need a professional engineering solution for your next building or infrastructure project?</h2>
+    <a href="#contact" class="btn btn-solid">Get a Quote →</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow">Contact</span>
+      <h2>Let's discuss your project</h2>
+      <p style="margin-top:12px; color:#54606A;">Send your project details or contact us directly — we usually reply within a day.</p>
+      <div class="contact-list">
+        <a href="tel:+9779852820215"><span>📞</span><div><span class="k">Phone</span>+977 9852820215</div></a>
+        <a href="mailto:rkengineeringconsultant@gmail.com"><span>✉️</span><div><span class="k">Email</span>rkengineeringconsultant@gmail.com</div></a>
+        <div><span>📍</span><div><span class="k">Address</span>Rajbiraj-2, Saptari, Nepal</div></div>
+      </div>
+      <div class="map-box">
+        <iframe src="https://www.google.com/maps?q=Rajbiraj-2,Saptari,Nepal&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="RK Engineering Consultant location — Rajbiraj-2, Saptari, Nepal" allowfullscreen></iframe>
+      </div>
+    </div>
+    <form class="form-box" id="quoteForm">
+      <div class="field"><label for="name">Full name</label><input id="name" required placeholder="Your name"></div>
+      <div class="field"><label for="phone">Phone number</label><input id="phone" required placeholder="98XXXXXXXX"></div>
+      <div class="field"><label for="service">Service needed</label>
+        <select id="service">
+          <option>Building Design</option><option>Structural Design</option><option>ETABS Analysis</option>
+          <option>AutoCAD Drawing</option><option>BOQ &amp; Estimation</option><option>DPR Preparation</option>
+          <option>Survey &amp; Mapping</option><option>Site Supervision</option>
+        </select>
+      </div>
+      <div class="field"><label for="msg">Project details</label><textarea id="msg" rows="4" placeholder="Tell us about your plot size, location and requirements"></textarea></div>
+      <button type="submit" class="btn btn-solid">Send via WhatsApp →</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-wrap">
+    <div><b>RK ENGINEERING CONSULTANT</b><br>Rajbiraj-2, Saptari, Nepal</div>
+    <div>© <span id="year"></span> RK Engineering Consultant. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/9779852820215" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">💬</a>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const navToggle = document.getElementById('navToggle');
+const mainNav = document.getElementById('mainNav');
+navToggle.addEventListener('click', ()=>{
+  const open = mainNav.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', open);
+});
+mainNav.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=> {
+  mainNav.classList.remove('open'); navToggle.setAttribute('aria-expanded','false');
+}));
+
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const service = document.getElementById('service').value;
+  const msg = document.getElementById('msg').value.trim();
+  const text = `Hello RK Engineering Consultant, I'd like a quote.%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service)}%0ADetails: ${encodeURIComponent(msg)}`;
+  window.open(`https://wa.me/9779852820215?text=${text}`, '_blank');
+});
+</script>
+</body>
+</html>
