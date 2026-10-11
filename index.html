@@ -8,7 +8,44 @@
   <title>RK Engineering Consultant | Rajbiraj</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body<style>
+.flash-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: min(360px, calc(100% - 40px));
+  background: #0f766e;
+  color: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px #0003;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+}
+.flash-message button {
+  background: white;
+  color: #0f766e;
+  border: 0;
+  padding: 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+
+<div class="flash-message" id="flashMessage">
+  <strong>महत्त्वपूर्ण सूचना!</strong>
+  <p>RK Engineering Consultant मा स्वागत छ। घरको नक्सा, Structural Design तथा Estimate सेवाका लागि सम्पर्क गर्नुहोस्।</p>
+  <button onclick="document.getElementById('flashMessage').remove()">
+    बन्द गर्नुहोस् ×
+  </button>
+</div>
+
+</body>
+
+
+
+च
+>
 
 <header class="top-header">
   <div class="container header-inner">
